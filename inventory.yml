@@ -1,0 +1,10 @@
+all:
+  hosts:
+  children:
+    winbuildservers:
+      hosts:
+        myhost.mycompany.com:
+      vars:
+        ansible_user: na
+    windpkservers:
+      hosts:
